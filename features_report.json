@@ -1,0 +1,133 @@
+[
+  {
+    "uri": "features/example.feature",
+    "id": "realizar-um-cadastro-de-cliente",
+    "keyword": "Funcionalidade",
+    "name": "Realizar um cadastro de cliente",
+    "description": "",
+    "line": 3,
+    "elements": [
+      {
+        "id": "realizar-um-cadastro-de-cliente;efetuar-um-cadastro-de-cliente-com-sucesso-pessoa-fisíca",
+        "keyword": "Cenario",
+        "name": "Efetuar um cadastro de cliente com sucesso pessoa fisíca",
+        "description": "",
+        "line": 5,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.17.0/lib/capybara/cucumber.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34074
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.17.0/lib/capybara/cucumber.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15600
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6735908489
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu esteja no site",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/step_definitions.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14486786701
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "clico no menu",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/step_definitions.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4037050113
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "Clico em não possuo cadastro",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/step_definitions.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 233219358
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "preencho o formulario",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/step_definitions.rb:16"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `unchecked' for #<Capybara::Node::Element:0x00000005214170> (NoMethodError)\n./features/step_definitions/step_definitions.rb:35:in `\"preencho o formulario\"'\nfeatures/example.feature:10:in `E preencho o formulario'",
+              "duration": 3552917443
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "clico em continuar",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/step_definitions.rb:39"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "valido o cadastro efetuado com sucesso",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/step_definitions.rb:44"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-2.17.0/lib/capybara/cucumber.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4023258182
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

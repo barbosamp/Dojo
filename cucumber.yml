@@ -1,0 +1,2 @@
+html_report: --format progress --format html --out=features_report.html
+json: --format progress --format json --out=features_report.json
