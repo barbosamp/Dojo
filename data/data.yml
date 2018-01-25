@@ -1,0 +1,4 @@
+
+email: FFaker::Internet.email
+nome: FFaker::Name.name
+cpf: FFaker::IdentificationBR.cpf

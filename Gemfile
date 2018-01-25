@@ -6,3 +6,4 @@
  gem 'capybara',                 '2.14.1'
  gem 'pry',                      '0.10.4'
  gem 'poltergeist',              '1.15.0'
+ gem 'ffaker'

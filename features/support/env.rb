@@ -1,14 +1,21 @@
 require 'rspec'
 require 'yaml'
 require 'pry'
- require 'capybara/cucumber'
- require 'capybara/poltergeist'
- require 'ffaker'
+require 'capybara/cucumber'
+require 'capybara/poltergeist'
+require 'ffaker'
+require 'selenium/webdriver'
+
+EL = YAML.load_file("data/elements.yml")
+DATA = YAML.load_file("data/data.yml")
+
 
  if ENV['chrome']
    Capybara.default_driver = :chrome
+   caps = Selenium::WebDriver::Remote::Capabilities.chrome
+   caps['pageLoadStrategy'] = 'none'
    Capybara.register_driver :chrome do |app|
-     Capybara::Selenium::Driver.new(app, browser: :chrome)
+     Capybara::Selenium::Driver.new(app, browser: :chrome, desired_capabilities: caps)
    end
  elsif ENV['firefox']
    Capybara.default_driver = :firefox
